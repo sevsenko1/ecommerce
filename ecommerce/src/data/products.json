@@ -1,0 +1,99 @@
+[
+  {
+    "id": "p-001",
+    "name": "NordicLine Akıllı Telefon 256GB",
+    "price": 14999,
+    "category": "elektronik",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+    "rating": 4.8,
+    "badges": ["Çok Satan", "Hızlı Teslimat"],
+    "stock": 18,
+    "description": "120 Hz AMOLED ekran, 50MP OIS kamera ve 65W hızlı şarj sunan modern akıllı telefon.",
+    "highlights": [
+      "Snapdragon 8 Gen 2 işlemci",
+      "65W GaN hızlı şarj adaptörü",
+      "IP68 suya dayanıklılık"
+    ]
+  },
+  {
+    "id": "p-002",
+    "name": "AuraHome Premium Kahve Makinesi",
+    "price": 3299,
+    "category": "ev-yasam",
+    "image": "https://images.unsplash.com/photo-1498804103079-a6351b050096",
+    "rating": 4.6,
+    "badges": ["Yeni Sezon"],
+    "stock": 32,
+    "description": "Çift hazneli, barista seviyesinde crema elde etmenizi sağlayan kahve makinesi.",
+    "highlights": [
+      "15 bar pompa basıncı",
+      "Akıllı ısı kontrolü",
+      "Paslanmaz çelik gövde"
+    ]
+  },
+  {
+    "id": "p-003",
+    "name": "FlowFit Koşu Ayakkabısı",
+    "price": 2299,
+    "category": "moda",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+    "rating": 4.7,
+    "badges": ["Editör Seçimi"],
+    "stock": 44,
+    "description": "Gün boyu konfor sunan, nefes alan örgü yapıda premium koşu ayakkabısı.",
+    "highlights": [
+      "Ultra hafif köpük taban",
+      "Nefes alabilen primeknit üst",
+      "Topuk sabitleyici destek"
+    ]
+  },
+  {
+    "id": "p-004",
+    "name": "Zenith Ultra 27\" 4K Monitör",
+    "price": 11999,
+    "category": "elektronik",
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+    "rating": 4.9,
+    "badges": ["Profesyonel"],
+    "stock": 12,
+    "description": "Creator odaklı, %98 DCI-P3 kapsama ve Thunderbolt 4 destekli 4K monitör.",
+    "highlights": [
+      "Calman onaylı renk doğruluğu",
+      "Thunderbolt 4 ve USB-C hub",
+      "Ergonomik pivot stand"
+    ]
+  },
+  {
+    "id": "p-005",
+    "name": "GlowLab Akıllı Masa Lambası",
+    "price": 1899,
+    "category": "ev-yasam",
+    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+    "rating": 4.5,
+    "badges": ["Sürdürülebilir"],
+    "stock": 27,
+    "description": "Kablosuz şarj destekli, sıcaklık ayarlı, minimal tasarımlı masa lambası.",
+    "highlights": [
+      "Kablosuz hızlı şarj pedi",
+      "5 kademeli renk sıcaklığı",
+      "Dokunmatik kontrol paneli"
+    ]
+  },
+  {
+    "id": "p-006",
+    "name": "PureSound Gürültü Önleyici Kulaklık",
+    "price": 5699,
+    "category": "elektronik",
+    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944",
+    "rating": 4.8,
+    "badges": ["Sınırlı Stok"],
+    "stock": 20,
+    "description": "Uyarlanabilir ANC teknolojisi ve 40 saat pil ömrü sunan üst segment kulaklık.",
+    "highlights": [
+      "Uyarlanabilir gürültü engelleme",
+      "40 saat aktif kullanım",
+      "Çift cihaz eşleşmesi"
+    ]
+  }
+]
+

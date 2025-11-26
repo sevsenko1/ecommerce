@@ -1,0 +1,21 @@
+[
+  {
+    "id": "elektronik",
+    "name": "Elektronik",
+    "description": "Akıllı cihazlar, bilgisayarlar ve tüm aksesuarlar için güncel koleksiyon.",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475"
+  },
+  {
+    "id": "moda",
+    "name": "Moda",
+    "description": "Sezonun öne çıkan sneaker, çanta ve günlük giyim kombinleri.",
+    "image": "https://images.unsplash.com/photo-1503342250614-ca4407868a5b"
+  },
+  {
+    "id": "ev-yasam",
+    "name": "Ev & Yaşam",
+    "description": "Minimal tasarımlar, akıllı ev ürünleri ve yaşam alanı aksesuarları.",
+    "image": "https://images.unsplash.com/photo-1612157777902-5382bc6e864b"
+  }
+]
+
