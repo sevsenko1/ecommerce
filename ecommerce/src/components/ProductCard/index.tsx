@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { formatPrice } from "@/utils/formatPrice";
 import { AddToCartButton } from "@/components/AddToCartButton";
+import categoriesData from "@/data/categories.json";
 
 export type Product = {
   id: string;
@@ -16,6 +17,10 @@ export type Product = {
   description?: string;
   highlights?: string[];
 };
+
+const categoryMap = Object.fromEntries(
+  categoriesData.map((category) => [category.id, category.name]),
+);
 
 interface ProductCardProps {
   product: Product;
@@ -46,7 +51,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
       <div className="flex flex-1 flex-col gap-4 p-5">
         <div>
           <p className="text-xs uppercase tracking-wide text-slate-500">
-            {product.category}
+            {categoryMap[product.category] ?? product.category}
           </p>
           <Link
             href={`/product/${product.id}`}

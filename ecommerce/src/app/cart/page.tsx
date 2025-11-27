@@ -6,9 +6,9 @@ import { useCart } from "@/context/CartContext";
 import { formatPrice } from "@/utils/formatPrice";
 
 const perks = [
-  "30 gün ücretsiz iade",
-  "Ertesi gün kargo",
-  "Güvenli ödeme altyapısı",
+  "Her siparişe anti-statik iç kılıf",
+  "İstanbul içi 24 saatte teslim",
+  "Analog baskı sertifikası mail ile",
 ];
 
 export default function CartPage() {
@@ -18,7 +18,7 @@ export default function CartPage() {
     <div className="mx-auto flex max-w-5xl flex-col gap-10 px-4 py-10">
       <section className="rounded-3xl bg-white p-8 shadow-sm">
         <div className="flex items-center justify-between">
-          <h1 className="text-3xl font-semibold">Sepet</h1>
+          <h1 className="text-3xl font-semibold">GrooveVault Sepeti</h1>
           {items.length > 0 && (
             <button
               onClick={clearCart}

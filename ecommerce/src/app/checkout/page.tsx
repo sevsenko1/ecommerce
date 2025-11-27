@@ -16,9 +16,9 @@ export default function CheckoutPage() {
   return (
     <div className="mx-auto flex max-w-4xl flex-col gap-10 px-4 py-10">
       <section className="rounded-3xl bg-white p-8 shadow-sm">
-        <h1 className="text-3xl font-semibold">Dummy Checkout</h1>
+        <h1 className="text-3xl font-semibold">Analog Checkout</h1>
         <p className="text-sm text-slate-500">
-          Bu ekran gerçek ödeme almadan görsel bir deneyim sağlar.
+          Plak & kaset siparişleri için mock bir ödeme ekranı. Anti-statik paketleme ve kargo tercihlerini burada simüle edebilirsin.
         </p>
       </section>
 
@@ -49,7 +49,7 @@ export default function CheckoutPage() {
               <input className="rounded-2xl border border-slate-200 px-4 py-3" placeholder="Şehir" />
               <input className="rounded-2xl border border-slate-200 px-4 py-3" placeholder="Posta Kodu" />
             </div>
-            <textarea className="min-h-[100px] rounded-2xl border border-slate-200 px-4 py-3" placeholder="Teslimat Notu" />
+          <textarea className="min-h-[100px] rounded-2xl border border-slate-200 px-4 py-3" placeholder="Koleksiyon notları / teslimat talebi" />
           </div>
           <button className="w-full rounded-full bg-slate-900 py-3 text-sm font-semibold text-white">
             Adres Kaydet (Dummy)
@@ -73,8 +73,7 @@ export default function CheckoutPage() {
             <span>{formatPrice(cartTotal)}</span>
           </div>
           <div className="rounded-2xl border border-dashed border-orange-200 p-4 text-sm text-orange-500">
-            Dummy checkout: Bu aşama sadece görsel amaçlıdır, gerçek ödeme işlemi
-            yapılmaz.
+            Analog uyarı: Bu demo akışında gerçek ödeme alınmaz, yalnızca arayüz deneyimi paylaşıyoruz.
           </div>
           <Link
             href="/"

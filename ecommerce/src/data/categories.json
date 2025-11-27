@@ -1,21 +1,27 @@
 [
   {
-    "id": "elektronik",
-    "name": "Elektronik",
-    "description": "Akıllı cihazlar, bilgisayarlar ve tüm aksesuarlar için güncel koleksiyon.",
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475"
+    "id": "rock",
+    "name": "Analog Rock",
+    "description": "70'lerin stadyum gitarlarından indie sahnesine, kült LP baskıları.",
+    "image": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": "moda",
-    "name": "Moda",
-    "description": "Sezonun öne çıkan sneaker, çanta ve günlük giyim kombinleri.",
-    "image": "https://images.unsplash.com/photo-1503342250614-ca4407868a5b"
+    "id": "jazz",
+    "name": "Blue Note Jazz",
+    "description": "Sax riffleri, bop trio'ları ve hi-fi kayıtlarla dolu caz rafı.",
+    "image": "https://images.unsplash.com/photo-1466428996289-fb355538da1b?auto=format&fit=crop&w=800&q=80"
   },
   {
-    "id": "ev-yasam",
-    "name": "Ev & Yaşam",
-    "description": "Minimal tasarımlar, akıllı ev ürünleri ve yaşam alanı aksesuarları.",
-    "image": "https://images.unsplash.com/photo-1612157777902-5382bc6e864b"
+    "id": "soundtrack",
+    "name": "Original Soundtracks",
+    "description": "Sinematik orkestrasyonlar, synth dalgaları ve oyun müzikleri.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": "anatolian",
+    "name": "Anadolu Psych",
+    "description": "Bağlama riffleriyle psychedelic fuzz'ı birleştiren yerel efsaneler.",
+    "image": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=800&q=80"
   }
 ]
 

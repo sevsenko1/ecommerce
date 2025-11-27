@@ -2,6 +2,7 @@ import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import productsData from "@/data/products.json";
+import categoriesData from "@/data/categories.json";
 import { formatPrice } from "@/utils/formatPrice";
 import { ProductCard, type Product } from "@/components/ProductCard";
 import { AddToCartButton } from "@/components/AddToCartButton";
@@ -33,6 +34,10 @@ export const generateStaticParams = async () => {
   return productsData.map((product) => ({ id: product.id }));
 };
 
+const categoryMap = Object.fromEntries(
+  categoriesData.map((category) => [category.id, category.name]),
+);
+
 export default async function ProductDetailPage({
   params,
 }: {
@@ -56,7 +61,7 @@ export default async function ProductDetailPage({
         <div className="flex flex-col gap-6">
           <div>
             <p className="text-sm uppercase tracking-[0.4em] text-slate-500">
-              {product.category}
+              {categoryMap[product.category] ?? product.category}
             </p>
             <h1 className="text-4xl font-semibold">{product.name}</h1>
           </div>

@@ -1,98 +1,194 @@
 [
   {
-    "id": "p-001",
-    "name": "NordicLine Akıllı Telefon 256GB",
-    "price": 14999,
-    "category": "elektronik",
-    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
-    "rating": 4.8,
-    "badges": ["Çok Satan", "Hızlı Teslimat"],
-    "stock": 18,
-    "description": "120 Hz AMOLED ekran, 50MP OIS kamera ve 65W hızlı şarj sunan modern akıllı telefon.",
-    "highlights": [
-      "Snapdragon 8 Gen 2 işlemci",
-      "65W GaN hızlı şarj adaptörü",
-      "IP68 suya dayanıklılık"
-    ]
-  },
-  {
-    "id": "p-002",
-    "name": "AuraHome Premium Kahve Makinesi",
-    "price": 3299,
-    "category": "ev-yasam",
-    "image": "https://images.unsplash.com/photo-1498804103079-a6351b050096",
-    "rating": 4.6,
-    "badges": ["Yeni Sezon"],
-    "stock": 32,
-    "description": "Çift hazneli, barista seviyesinde crema elde etmenizi sağlayan kahve makinesi.",
-    "highlights": [
-      "15 bar pompa basıncı",
-      "Akıllı ısı kontrolü",
-      "Paslanmaz çelik gövde"
-    ]
-  },
-  {
-    "id": "p-003",
-    "name": "FlowFit Koşu Ayakkabısı",
-    "price": 2299,
-    "category": "moda",
-    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
-    "rating": 4.7,
-    "badges": ["Editör Seçimi"],
-    "stock": 44,
-    "description": "Gün boyu konfor sunan, nefes alan örgü yapıda premium koşu ayakkabısı.",
-    "highlights": [
-      "Ultra hafif köpük taban",
-      "Nefes alabilen primeknit üst",
-      "Topuk sabitleyici destek"
-    ]
-  },
-  {
-    "id": "p-004",
-    "name": "Zenith Ultra 27\" 4K Monitör",
-    "price": 11999,
-    "category": "elektronik",
-    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+    "id": "vinyl-floyd-darkside",
+    "name": "Pink Floyd – The Dark Side of the Moon (1973)",
+    "price": 1450,
+    "category": "rock",
+    "image": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80",
     "rating": 4.9,
-    "badges": ["Profesyonel"],
-    "stock": 12,
-    "description": "Creator odaklı, %98 DCI-P3 kapsama ve Thunderbolt 4 destekli 4K monitör.",
+    "badges": ["Audiophile", "Gatefold"],
+    "stock": 7,
+    "description": "Orijinal EMI mastering referans alınarak 180gr plakta yeniden basılan ikonik konsept albüm. Prizma kapak baskısı ve poster içerir.",
     "highlights": [
-      "Calman onaylı renk doğruluğu",
-      "Thunderbolt 4 ve USB-C hub",
-      "Ergonomik pivot stand"
+      "180gr heavyweight vinil",
+      "Analog Abbey Road remaster",
+      "Poster + prizma sticker seti"
     ]
   },
   {
-    "id": "p-005",
-    "name": "GlowLab Akıllı Masa Lambası",
-    "price": 1899,
-    "category": "ev-yasam",
-    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
-    "rating": 4.5,
-    "badges": ["Sürdürülebilir"],
-    "stock": 27,
-    "description": "Kablosuz şarj destekli, sıcaklık ayarlı, minimal tasarımlı masa lambası.",
-    "highlights": [
-      "Kablosuz hızlı şarj pedi",
-      "5 kademeli renk sıcaklığı",
-      "Dokunmatik kontrol paneli"
-    ]
-  },
-  {
-    "id": "p-006",
-    "name": "PureSound Gürültü Önleyici Kulaklık",
-    "price": 5699,
-    "category": "elektronik",
-    "image": "https://images.unsplash.com/photo-1484704849700-f032a568e944",
+    "id": "vinyl-ledzep-iv",
+    "name": "Led Zeppelin – IV (1971)",
+    "price": 1290,
+    "category": "rock",
+    "image": "https://images.unsplash.com/photo-1485579149621-3123dd979885?auto=format&fit=crop&w=900&q=80",
     "rating": 4.8,
-    "badges": ["Sınırlı Stok"],
-    "stock": 20,
-    "description": "Uyarlanabilir ANC teknolojisi ve 40 saat pil ömrü sunan üst segment kulaklık.",
+    "badges": ["Koleksiyon"],
+    "stock": 12,
+    "description": "Stairway to Heaven ve Black Dog kayıtlarını barındıran klasik LP, orijinal textured sleeve ile birlikte geliyor.",
     "highlights": [
-      "Uyarlanabilir gürültü engelleme",
-      "40 saat aktif kullanım",
-      "Çift cihaz eşleşmesi"
+      "Textured kapak replika",
+      "SWA etiket reprodüksiyonu",
+      "Dinamik aralığı genişletilmiş master"
+    ]
+  },
+  {
+    "id": "vinyl-bowie-berlin",
+    "name": "David Bowie – Low (1977)",
+    "price": 1180,
+    "category": "rock",
+    "image": "https://images.unsplash.com/photo-1520627973594-9713bf272805?auto=format&fit=crop&w=900&q=80",
+    "rating": 4.7,
+    "badges": ["Berlin Trilogy"],
+    "stock": 10,
+    "description": "Brian Eno ortak prodüksiyonlu minimal synth ve art-rock kayıtları, turuncu RCA labeling ile yeni basım.",
+    "highlights": [
+      "Obi-strip eklenmiş Avrupa baskı",
+      "Turuncu RCA label kopyası",
+      "Bonus iç kitapçık"
+    ]
+  },
+  {
+    "id": "vinyl-miles-kindofblue",
+    "name": "Miles Davis – Kind of Blue (1959)",
+    "price": 1380,
+    "category": "jazz",
+    "image": "https://images.unsplash.com/photo-1466428996289-fb355538da1b?auto=format&fit=crop&w=900&q=80",
+    "rating": 5,
+    "badges": ["Mono Mix", "Blue Note"],
+    "stock": 9,
+    "description": "Modüler cazın mihenk taşı, Bernie Grundman mastering ile AAA zincirde basıldı. Mono mix tercih edenler için sınırlı seri.",
+    "highlights": [
+      "AAA mastering zinciri",
+      "Tip-on jacket kapak",
+      "Collector liner notes"
+    ]
+  },
+  {
+    "id": "vinyl-coltrane-love",
+    "name": "John Coltrane – A Love Supreme (1965)",
+    "price": 1320,
+    "category": "jazz",
+    "image": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80",
+    "rating": 4.9,
+    "badges": ["Spiritual Jazz"],
+    "stock": 11,
+    "description": "Impulse! etiketinin en büyülü kayıtlarından, gatefold kapakta Spirit Notes fasikülü ile birlikte.",
+    "highlights": [
+      "Gatefold tip-on jacket",
+      "Sax solo transkripsiyon eki",
+      "High-res download kartı"
+    ]
+  },
+  {
+    "id": "vinyl-nina-sings",
+    "name": "Nina Simone – Pastel Blues (1965)",
+    "price": 980,
+    "category": "jazz",
+    "image": "https://images.unsplash.com/photo-1461782296612-2aab0c68fe17?auto=format&fit=crop&w=900&q=80",
+    "rating": 4.6,
+    "badges": ["Vocal Jazz"],
+    "stock": 15,
+    "description": "Blues standartlarını Nina Simone yorumuyla sunan albüm; lacivert Impulse! center labels ile basıldı.",
+    "highlights": [
+      "Deluxe tip-on kapak",
+      "UV coated sleeve",
+      "Her parça için liner notlar"
+    ]
+  },
+  {
+    "id": "vinyl-bladerunner",
+    "name": "Blade Runner OST – Vangelis (1982)",
+    "price": 1150,
+    "category": "soundtrack",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+    "rating": 4.8,
+    "badges": ["Synthwave", "Colored Vinyl"],
+    "stock": 18,
+    "description": "Neon şehir atmosferini taşıyan ambient-synth skor, şeffaf duman efektli renkli vinil üzerinde sunuluyor.",
+    "highlights": [
+      "Smoke clear coloured vinyl",
+      "Director cut insert",
+      "Obi-strip + şehir planı poster"
+    ]
+  },
+  {
+    "id": "vinyl-zelda-oot",
+    "name": "The Legend of Zelda: Ocarina of Time OST",
+    "price": 1250,
+    "category": "soundtrack",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80",
+    "rating": 4.7,
+    "badges": ["Game Score"],
+    "stock": 13,
+    "description": "Koji Kondo'nun ikonik oyun müzikleri, kartuş görünümlü gatefold kapak ve orkestra transkripsiyonlarıyla geliyor.",
+    "highlights": [
+      "Tri-Force gold vinyl",
+      "Hyrule map insert",
+      "Orkestra partisyon kitapçığı"
+    ]
+  },
+  {
+    "id": "vinyl-studio-ghibli",
+    "name": "Studio Ghibli Classics – Joe Hisaishi",
+    "price": 1390,
+    "category": "soundtrack",
+    "image": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=80",
+    "rating": 4.9,
+    "badges": ["Import", "Boxset"],
+    "stock": 6,
+    "description": "Prenses Mononoke'den Ruhların Kaçışı'na kadar seçme parçalar, üç plaklık box-set ve illüstrasyon print'leriyle.",
+    "highlights": [
+      "3xLP 180gr set",
+      "Miyazaki illüstrasyon kartları",
+      "Japon obi strip"
+    ]
+  },
+  {
+    "id": "vinyl-barish-mancho",
+    "name": "Barış Manço – 2023 (1975)",
+    "price": 890,
+    "category": "anatolian",
+    "image": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=900&q=80",
+    "rating": 4.8,
+    "badges": ["Anadolu Rock"],
+    "stock": 20,
+    "description": "Bağlama ve fuzz gitarı aynı potada eriten Barış Manço klasiği, remastered stereo mix ile yayımlandı.",
+    "highlights": [
+      "Şeffaf kırmızı vinil",
+      "Yeni liner notlar",
+      "Poster ve lyric sheet"
+    ]
+  },
+  {
+    "id": "vinyl-erdem-bulur",
+    "name": "Erkin Koray – Elektronik Türküler (1974)",
+    "price": 960,
+    "category": "anatolian",
+    "image": "https://images.unsplash.com/photo-1500336624523-d727130c3328?auto=format&fit=crop&w=900&q=80",
+    "rating": 4.7,
+    "badges": ["Reissue"],
+    "stock": 17,
+    "description": "Psychedelic fuzz tonları ve bağlama riffleriyle Anadolu rock'ın mihenk taşı; gatefold kapak ve fotoğraflarla.",
+    "highlights": [
+      "Analog bantlardan transfer",
+      "Gatefold fotoğraf arşivi",
+      "Bonus 7'' single kodu"
+    ]
+  },
+  {
+    "id": "vinyl-mogollar",
+    "name": "Moğollar – Anadolu Pop (1971)",
+    "price": 910,
+    "category": "anatolian",
+    "image": "https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=900&q=80",
+    "rating": 4.5,
+    "badges": ["Gatefold"],
+    "stock": 24,
+    "description": "Organik davullar, kaval ve fuzz gitarı harmanlayan efsane albüm. Dönemin fotoğraflarıyla yenilenmiş iç baskı.",
+    "highlights": [
+      "Insert'ta grup röportajı",
+      "Analog mastering",
+      "Koruyucu dış kılıf"
     ]
   }
 ]

@@ -30,7 +30,7 @@ export const CategoryCard = ({ category }: CategoryCardProps) => {
       </div>
       <div className="absolute inset-x-0 bottom-0 flex flex-col gap-1 p-6 text-white">
         <p className="text-sm uppercase tracking-[0.3em] text-white/70">
-          kategori
+          raf
         </p>
         <h3 className="text-2xl font-semibold">{category.name}</h3>
         <p className="text-sm text-white/80">{category.description}</p>
