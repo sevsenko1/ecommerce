@@ -25,18 +25,37 @@ export const generateStaticParams = async () => {
   return categoriesData.map((category) => ({ slug: category.id }));
 };
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const category = findCategory(slug);
+  if (!category) {
+    return {
+      title: "Kategori Bulunamadı",
+    };
+  }
+  return {
+    title: category.name,
+    description: category.description,
+  };
+}
+
 export default async function CategoryPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const category = findCategory(params.slug);
+  const { slug } = await params;
+  const category = findCategory(slug);
   if (!category) notFound();
-  const products = await fetchProducts(params.slug);
+  const products = await fetchProducts(slug);
 
   return (
     <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-10">
-      <section className="relative overflow-hidden rounded-3xl text-white">
+      <section className="relative h-80 overflow-hidden rounded-3xl text-white md:h-96">
         <Image
           src={category.image}
           alt={category.name}
