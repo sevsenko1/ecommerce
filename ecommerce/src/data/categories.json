@@ -3,25 +3,25 @@
     "id": "rock",
     "name": "Analog Rock",
     "description": "70'lerin stadyum gitarlarından indie sahnesine, kült LP baskıları.",
-    "image": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80"
+    "image": "/pictures/analogrock/pink-floyd-dark-side.jpg"
   },
   {
     "id": "jazz",
     "name": "Blue Note Jazz",
     "description": "Sax riffleri, bop trio'ları ve hi-fi kayıtlarla dolu caz rafı.",
-    "image": "https://images.unsplash.com/photo-1466428996289-fb355538da1b?auto=format&fit=crop&w=800&q=80"
+    "image": "/pictures/bluenotejazz/autumn-its-always-about-the-girl.jpg"
   },
   {
     "id": "soundtrack",
     "name": "Original Soundtracks",
     "description": "Sinematik orkestrasyonlar, synth dalgaları ve oyun müzikleri.",
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+    "image": "/pictures/originals/nickcave-and-thebadseeds-abottoirblues.jpg"
   },
   {
     "id": "anatolian",
     "name": "Anadolu Psych",
     "description": "Bağlama riffleriyle psychedelic fuzz'ı birleştiren yerel efsaneler.",
-    "image": "https://images.unsplash.com/photo-1507838153414-b4b713384a76?auto=format&fit=crop&w=800&q=80"
+    "image": "/pictures/anadolurock/01-baris-manco-2023.jpg"
   }
 ]
 
