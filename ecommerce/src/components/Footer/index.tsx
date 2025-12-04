@@ -1,4 +1,4 @@
-const brandName = "GrooveVault";
+const brandName = "PlakLab";
 
 export const Footer = () => {
   return (

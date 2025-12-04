@@ -1,6 +1,8 @@
 import { headers } from "next/headers";
 import { CategoryCard, type Category } from "@/components/CategoryCard";
 import { ProductCard, type Product } from "@/components/ProductCard";
+import { WhyPlakLab } from "@/components/WhyPlakLab";
+import { FeatureCarousel } from "@/components/FeatureCarousel";
 
 const getBaseUrl = async () => {
   const headersList = await headers();
@@ -27,23 +29,6 @@ const getProducts = async () => {
   return (await res.json()) as Product[];
 };
 
-const featureHighlights = [
-  {
-    title: "AAA Mastering Sözü",
-    description:
-      "Analog banttan kesilen baskıları işaretliyor, dijital kaynaklılar için ayrı etiket sunuyoruz.",
-  },
-  {
-    title: "Anti-statik Paketleme",
-    description:
-      "Her sipariş kristal iç kılıf, dış koruma ve nem bariyeri ile geliyor.",
-  },
-  {
-    title: "Koleksiyon Takibi",
-    description:
-      "Sınırlı stoklu baskılar için tekrar basım bildirimleri ve bekleme listesi yönetimi.",
-  },
-];
 
 export default async function HomePage() {
   const [categories, products] = await Promise.all([
@@ -54,61 +39,46 @@ export default async function HomePage() {
   return (
     <div className="mx-auto flex max-w-6xl flex-col gap-16 px-4 py-10">
       <section className="grid gap-8 rounded-3xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 p-10 text-white lg:grid-cols-2">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col justify-center gap-6">
           <p className="text-lg font-semibold uppercase tracking-[0.3em] text-white/70">
-            Analog seçki
+            Analog koleksiyon
           </p>
           <h1 className="text-4xl font-semibold leading-tight">
-            GrooveVault: retro plak ve kaset koleksiyoncuları için küratörlü vitrin
+            PlakLab: Analog sesin modern adresi
           </h1>
           <p className="text-lg text-white/80">
-            Trendyol benzeri kart tabanlı deneyimi; AAA mastering verileri, anti-statik paketleme
-            ve limitli stok uyarılarıyla yeniden tasarladık.
+            Koleksiyon değeri taşıyan plaklar ve kasetler için özenle seçilmiş küratörlü koleksiyon. 
+            Her ürün AAA mastering sertifikası, özel paketleme ve detaylı bilgilendirme ile geliyor.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <a
               href="#products"
-              className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900"
+              className="group relative overflow-hidden rounded-full border-2 border-transparent bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition-all duration-300 hover:-translate-y-0.5 hover:border-rose-500 hover:shadow-lg hover:shadow-rose-500/20"
             >
-              Yeni gelenleri keşfet
+              <span className="absolute inset-0 rounded-full bg-gradient-to-r from-rose-500 via-orange-400 to-rose-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
+              <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+                Yeni gelenleri keşfet
+              </span>
             </a>
             <a
               href="#categories"
-              className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white"
+              className="group relative overflow-hidden rounded-full border-2 border-white/30 bg-transparent px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white/10 hover:shadow-lg hover:shadow-white/20"
             >
-              Rafları incele
+              <span className="absolute inset-0 rounded-full border-2 border-transparent bg-gradient-to-r from-white/20 via-white/40 to-white/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
+              <span className="relative z-10">Rafları incele</span>
             </a>
           </div>
         </div>
-        <div className="rounded-2xl border border-white/10 bg-white/10 p-6 backdrop-blur">
-          <p className="mb-4 text-lg font-semibold uppercase tracking-[0.3em] text-white/70">
-            Analog Manifesto
-          </p>
-          <ul className="space-y-4 text-sm text-white/80">
-            <li>• Her plak anti-statik iç kılıf ve korumalı dış kılıfla gönderilir.</li>
-            <li>• AAA mastering / dijital remaster ayrımı ürün kartlarında açıkça belirtilir.</li>
-            <li>• Limitli baskılar için stok bittiğinde otomatik bekleme listesi önerisi gelir.</li>
-            <li>• CartContext ile plak/format bazlı varyasyonları takip ediyoruz.</li>
-          </ul>
-        </div>
+        <WhyPlakLab />
       </section>
 
-      <section className="grid gap-6 rounded-3xl bg-white p-8 shadow-sm lg:grid-cols-3">
-        {featureHighlights.map((feature) => (
-          <div key={feature.title} className="space-y-3">
-            <span className="text-xs uppercase tracking-[0.4em] text-slate-400">
-              {feature.title}
-            </span>
-            <p className="text-base text-slate-600">{feature.description}</p>
-          </div>
-        ))}
-      </section>
+      <FeatureCarousel />
 
       <section id="categories" className="space-y-6">
-        <p className="text-lg font-semibold uppercase tracking-[0.3em] text-slate-500">
-          Raflar
+        <p className="text-center text-lg font-semibold uppercase tracking-[0.3em] text-slate-500">
+          Koleksiyon Kategorileri
         </p>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((category) => (
             <CategoryCard key={category.id} category={category} />
           ))}
@@ -117,7 +87,7 @@ export default async function HomePage() {
 
       <section id="products" className="space-y-6">
         <p className="text-lg font-semibold uppercase tracking-[0.3em] text-slate-500">
-          Yeni gelen plaklar
+          Öne Çıkan Plaklar
         </p>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {products.map((product) => (

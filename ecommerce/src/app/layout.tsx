@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Trendly | Modern e-Ticaret Deneyimi",
+  title: "PlakLab | Analog Ses Koleksiyonu",
   description:
-    "App Router, Tailwind ve mini backend yapısıyla oluşturulmuş modern e-ticaret deneyimi.",
+    "Koleksiyon değeri taşıyan plaklar ve kasetler. AAA mastering sertifikası, özel paketleme ve nadir bulunan albümler.",
 };
 
 export default function RootLayout({
