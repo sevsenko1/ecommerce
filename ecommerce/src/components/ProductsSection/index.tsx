@@ -67,11 +67,11 @@ export const ProductsSection = ({
   return (
     <>
       <div id="products-section" className="space-y-6">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col items-center gap-2">
           <h2 className="text-lg font-semibold uppercase tracking-[0.3em] text-slate-500">
-            Ürünler
+            Öne Çıkan Plaklar
           </h2>
-          <span className="text-sm text-slate-500">
+          <span className="rounded-full bg-slate-100 px-4 py-1.5 text-sm font-medium text-slate-700">
             {filteredProducts.length} ürün
           </span>
         </div>

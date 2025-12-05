@@ -15,7 +15,7 @@ export const ComingSoon = () => {
 
   if (items.length === 0) {
     return (
-      <div id="coming-soon-empty" className="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6 shadow-sm">
+      <div id="coming-soon-empty" className="sticky top-24 rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6 shadow-sm">
         <div className="flex flex-col items-center justify-center space-y-4 py-8 text-center">
           <div className="flex h-16 w-16 items-center justify-center rounded-full bg-orange-100 text-3xl">
             ⏳
@@ -34,7 +34,7 @@ export const ComingSoon = () => {
   }
 
   return (
-    <div id="coming-soon-list" className="space-y-4 rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6 shadow-sm">
+    <div id="coming-soon-list" className="sticky top-24 space-y-4 rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-6 shadow-sm">
       <div className="flex items-center justify-between">
         <h3 className="text-lg font-semibold text-slate-900">Yakında Geliyor</h3>
         <span className="rounded-full bg-orange-500 px-3 py-1 text-xs font-semibold text-white">

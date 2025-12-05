@@ -50,7 +50,7 @@ export const ProductFilters = ({
   };
 
   return (
-    <div id="filters-sidebar" className="space-y-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+    <div id="filters-sidebar" className="sticky top-24 space-y-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-semibold text-slate-900">Filtreler</h2>
         <button
@@ -69,7 +69,7 @@ export const ProductFilters = ({
           placeholder="Ürün adı, sanatçı..."
           value={filters.search}
           onChange={(e) => handleChange("search", e.target.value)}
-          className="w-full rounded-xl border border-slate-200 px-4 py-2 text-sm focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20"
+          className="w-full rounded-xl border border-slate-200 px-4 py-3 text-base focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20"
         />
       </div>
 
@@ -79,7 +79,7 @@ export const ProductFilters = ({
         <select
           value={filters.category}
           onChange={(e) => handleChange("category", e.target.value)}
-          className="w-full rounded-xl border border-slate-200 px-4 py-2 text-sm focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20"
+          className="w-full rounded-xl border border-slate-200 px-4 py-3 text-base focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20"
         >
           <option value="">Tümü</option>
           {categories.map((category) => (
@@ -95,25 +95,31 @@ export const ProductFilters = ({
         <label className="text-sm font-medium text-slate-700">
           Fiyat Aralığı
         </label>
-        <div className="flex gap-2">
-          <input
-            type="number"
-            placeholder="Min"
-            value={filters.minPrice || ""}
-            onChange={(e) =>
-              handleChange("minPrice", parseInt(e.target.value) || 0)
-            }
-            className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20"
-          />
-          <input
-            type="number"
-            placeholder="Max"
-            value={filters.maxPrice || ""}
-            onChange={(e) =>
-              handleChange("maxPrice", parseInt(e.target.value) || 5000)
-            }
-            className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20"
-          />
+        <div className="flex flex-col gap-3">
+          <div>
+            <label className="mb-1 block text-xs text-slate-500">Minimum</label>
+            <input
+              type="number"
+              placeholder="0"
+              value={filters.minPrice || ""}
+              onChange={(e) =>
+                handleChange("minPrice", parseInt(e.target.value) || 0)
+              }
+              className="w-full rounded-xl border border-slate-200 px-4 py-3 text-lg font-medium focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20"
+            />
+          </div>
+          <div>
+            <label className="mb-1 block text-xs text-slate-500">Maksimum</label>
+            <input
+              type="number"
+              placeholder="5000"
+              value={filters.maxPrice || ""}
+              onChange={(e) =>
+                handleChange("maxPrice", parseInt(e.target.value) || 5000)
+              }
+              className="w-full rounded-xl border border-slate-200 px-4 py-3 text-lg font-medium focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20"
+            />
+          </div>
         </div>
       </div>
 
@@ -125,7 +131,7 @@ export const ProductFilters = ({
         <select
           value={filters.minRating}
           onChange={(e) => handleChange("minRating", parseFloat(e.target.value))}
-          className="w-full rounded-xl border border-slate-200 px-4 py-2 text-sm focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20"
+          className="w-full rounded-xl border border-slate-200 px-4 py-3 text-base focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20"
         >
           <option value={0}>Tümü</option>
           <option value={4}>4.0+</option>

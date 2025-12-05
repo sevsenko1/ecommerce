@@ -3,7 +3,7 @@ import { CategoryCard, type Category } from "@/components/CategoryCard";
 import { type Product } from "@/components/ProductCard";
 import { WhyPlakLab } from "@/components/WhyPlakLab";
 import { FeatureCarousel } from "@/components/FeatureCarousel";
-import { ProductsSectionWrapper } from "@/components/ProductsSectionWrapper";
+import { ProductsPage } from "@/components/ProductsPage";
 
 const getBaseUrl = async () => {
   const headersList = await headers();
@@ -90,10 +90,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <ProductsSectionWrapper
-        products={products}
-        categories={categories}
-      />
+      <ProductsPage products={products} categories={categories} />
     </div>
   );
 }
