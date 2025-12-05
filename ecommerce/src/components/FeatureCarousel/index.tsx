@@ -45,7 +45,7 @@ export const FeatureCarousel = () => {
   };
 
   return (
-    <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-50 to-white p-8 shadow-lg">
+    <section id="feature-carousel" className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-slate-50 to-white p-8 shadow-lg">
       <div className="relative h-56 lg:h-48">
         {features.map((feature, index) => {
           const offset = index - currentIndex;

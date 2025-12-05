@@ -1,8 +1,9 @@
 import { headers } from "next/headers";
 import { CategoryCard, type Category } from "@/components/CategoryCard";
-import { ProductCard, type Product } from "@/components/ProductCard";
+import { type Product } from "@/components/ProductCard";
 import { WhyPlakLab } from "@/components/WhyPlakLab";
 import { FeatureCarousel } from "@/components/FeatureCarousel";
+import { ProductsSectionWrapper } from "@/components/ProductsSectionWrapper";
 
 const getBaseUrl = async () => {
   const headersList = await headers();
@@ -37,8 +38,8 @@ export default async function HomePage() {
   ]);
 
   return (
-    <div className="mx-auto flex max-w-6xl flex-col gap-16 px-4 py-10">
-      <section className="grid gap-8 rounded-3xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 p-10 text-white lg:grid-cols-2">
+    <div className="mx-auto flex max-w-7xl flex-col gap-16 px-4 py-10">
+      <section id="hero" className="grid gap-8 rounded-3xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 p-10 text-white lg:grid-cols-2">
         <div className="flex flex-col justify-center gap-6">
           <p className="text-lg font-semibold uppercase tracking-[0.3em] text-white/70">
             Analog koleksiyon
@@ -69,10 +70,14 @@ export default async function HomePage() {
             </a>
           </div>
         </div>
-        <WhyPlakLab />
+        <div id="why-plaklab">
+          <WhyPlakLab />
+        </div>
       </section>
 
-      <FeatureCarousel />
+      <section id="features" className="space-y-6">
+        <FeatureCarousel />
+      </section>
 
       <section id="categories" className="space-y-6">
         <p className="text-center text-lg font-semibold uppercase tracking-[0.3em] text-slate-500">
@@ -85,16 +90,10 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section id="products" className="space-y-6">
-        <p className="text-lg font-semibold uppercase tracking-[0.3em] text-slate-500">
-          Öne Çıkan Plaklar
-        </p>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
-      </section>
+      <ProductsSectionWrapper
+        products={products}
+        categories={categories}
+      />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
 import { ToastProvider } from "@/context/ToastContext";
+import { WishlistProvider } from "@/context/WishlistContext";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
@@ -34,11 +35,13 @@ export default function RootLayout({
       >
         <CartProvider>
           <ToastProvider>
-            <div className="flex min-h-screen flex-col">
-              <Navbar />
-              <main className="flex-1 bg-slate-50">{children}</main>
-              <Footer />
-            </div>
+            <WishlistProvider>
+              <div className="flex min-h-screen flex-col">
+                <Navbar />
+                <main className="flex-1 bg-slate-50">{children}</main>
+                <Footer />
+              </div>
+            </WishlistProvider>
           </ToastProvider>
         </CartProvider>
       </body>
