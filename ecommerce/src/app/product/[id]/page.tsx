@@ -41,9 +41,10 @@ const categoryMap = Object.fromEntries(
 export default async function ProductDetailPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  const product = await fetchProduct(params.id);
+  const { id } = await params;
+  const product = await fetchProduct(id);
   if (!product) notFound();
   const related = await fetchRelated(product.category, product.id);
 

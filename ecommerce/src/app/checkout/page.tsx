@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { formatPrice } from "@/utils/formatPrice";
@@ -11,7 +12,13 @@ const steps = [
 ];
 
 export default function CheckoutPage() {
-  const { items, cartTotal } = useCart();
+  const router = useRouter();
+  const { items, cartTotal, clearCart } = useCart();
+
+  const handleCompletePayment = () => {
+    clearCart();
+    router.push("/");
+  };
 
   return (
     <div className="mx-auto flex max-w-4xl flex-col gap-10 px-4 py-10">
@@ -75,12 +82,12 @@ export default function CheckoutPage() {
           <div className="rounded-2xl border border-dashed border-orange-200 p-4 text-sm text-orange-500">
             Analog uyarı: Bu demo akışında gerçek ödeme alınmaz, yalnızca arayüz deneyimi paylaşıyoruz.
           </div>
-          <Link
-            href="/"
-            className="block rounded-full bg-gradient-to-r from-orange-500 to-pink-500 py-3 text-center text-sm font-semibold text-white"
+          <button
+            onClick={handleCompletePayment}
+            className="w-full rounded-full bg-gradient-to-r from-orange-500 to-pink-500 py-3 text-center text-sm font-semibold text-white transition hover:from-orange-600 hover:to-pink-600"
           >
             Mock Ödeme Akışını Tamamla
-          </Link>
+          </button>
         </aside>
       </div>
     </div>
