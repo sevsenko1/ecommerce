@@ -16,6 +16,7 @@ export type Product = {
   badges?: string[];
   description?: string;
   highlights?: string[];
+  stock?: number;
 };
 
 const categoryMap = Object.fromEntries(
