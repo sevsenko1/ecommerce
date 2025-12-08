@@ -3,8 +3,10 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
 import { Toast } from "@/components/Toast";
 
+type ToastVariant = "default" | "success";
+
 interface ToastContextValue {
-  showToast: (message: string) => void;
+  showToast: (message: string, variant?: ToastVariant) => void;
 }
 
 const ToastContext = createContext<ToastContextValue | undefined>(undefined);
@@ -12,9 +14,11 @@ const ToastContext = createContext<ToastContextValue | undefined>(undefined);
 export const ToastProvider = ({ children }: { children: ReactNode }) => {
   const [toastMessage, setToastMessage] = useState("");
   const [isVisible, setIsVisible] = useState(false);
+  const [variant, setVariant] = useState<ToastVariant>("default");
 
-  const showToast = (message: string) => {
+  const showToast = (message: string, toastVariant: ToastVariant = "default") => {
     setToastMessage(message);
+    setVariant(toastVariant);
     setIsVisible(true);
   };
 
@@ -31,6 +35,7 @@ export const ToastProvider = ({ children }: { children: ReactNode }) => {
         message={toastMessage}
         isVisible={isVisible}
         onClose={handleClose}
+        variant={variant}
       />
     </ToastContext.Provider>
   );

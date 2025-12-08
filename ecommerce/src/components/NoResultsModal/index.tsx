@@ -23,12 +23,16 @@ export const NoResultsModal = ({
   if (!isOpen) return null;
 
   const handleAddToWishlist = () => {
+    if (!artistName.trim()) {
+      showToast("Lütfen sanatçı adını girin");
+      return;
+    }
     const name = albumName || artistName || searchTerm;
     addToWishlist({
       id: `wishlist-${Date.now()}`,
       name: name,
       image: "/pictures/analogrock/pink-floyd-dark-side.jpg", // Default image
-      category: "unknown",
+      category: artistName,
     });
     showToast(`${name} istek listesine eklendi`);
     setArtistName("");
@@ -57,13 +61,14 @@ export const NoResultsModal = ({
         <div className="space-y-4">
           <div>
             <label className="mb-2 block text-sm font-medium text-slate-700">
-              Sanatçı Adı (Opsiyonel)
+              Sanatçı Adı
             </label>
             <input
               type="text"
               value={artistName}
               onChange={(e) => setArtistName(e.target.value)}
               placeholder="Örn: Pink Floyd"
+              required
               className="w-full rounded-xl border border-slate-200 px-4 py-2 text-sm focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20"
             />
           </div>
