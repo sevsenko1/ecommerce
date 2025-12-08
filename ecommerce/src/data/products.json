@@ -190,6 +190,166 @@
       "Analog mastering",
       "Koruyucu dış kılıf"
     ]
+  },
+  {
+    "id": "vinyl-3hurel-hurel",
+    "name": "3 Hürel – 3 Hür El (1971)",
+    "price": 850,
+    "category": "anatolian",
+    "image": "/pictures/anadolurock/31-3-hurel-3-hur-el.jpg",
+    "rating": 4.6,
+    "badges": ["Anadolu Rock"],
+    "stock": 18,
+    "description": "Anadolu rock'ın öncü gruplarından 3 Hürel'in ilk albümü. Bağlama ve elektro gitarın mükemmel uyumu.",
+    "highlights": [
+      "Orijinal kapak tasarımı",
+      "Remastered stereo mix",
+      "Grup fotoğrafları insert"
+    ]
+  },
+  {
+    "id": "vinyl-3hurel-arsiv",
+    "name": "3 Hürel – Hürel Arşivi (1973)",
+    "price": 920,
+    "category": "anatolian",
+    "image": "/pictures/anadolurock/32-3-hurel-hurel-arsivi.jpg",
+    "rating": 4.7,
+    "badges": ["Koleksiyon", "Gatefold"],
+    "stock": 15,
+    "description": "3 Hürel'in nadir kayıtlarını içeren arşiv albümü. Gatefold kapak ve detaylı liner notlar ile.",
+    "highlights": [
+      "Gatefold kapak",
+      "Nadir kayıtlar",
+      "Detaylı liner notlar"
+    ]
+  },
+  {
+    "id": "vinyl-fikret-notdefteri",
+    "name": "Fikret Kızılok – Not Defterimden (1976)",
+    "price": 880,
+    "category": "anatolian",
+    "image": "/pictures/anadolurock/33-fikret-kizilok-not-defterimden.jpg",
+    "rating": 4.8,
+    "badges": ["Anadolu Rock"],
+    "stock": 22,
+    "description": "Fikret Kızılok'un kişisel notlarından derlenen albüm. Akustik gitar ve vokal odaklı minimalist yaklaşım.",
+    "highlights": [
+      "Akustik mastering",
+      "Lyric sheet",
+      "Orijinal notlar reprodüksiyonu"
+    ]
+  },
+  {
+    "id": "vinyl-fikret-zaman",
+    "name": "Fikret Kızılok – Zaman Zaman (1974)",
+    "price": 900,
+    "category": "anatolian",
+    "image": "/pictures/anadolurock/34-fikret-kizilok-zaman-zaman.jpg",
+    "rating": 4.7,
+    "badges": ["Reissue"],
+    "stock": 19,
+    "description": "Fikret Kızılok'un zaman kavramını işlediği albüm. Folk ve rock elementlerinin harmanı.",
+    "highlights": [
+      "180gr vinil",
+      "Yeni liner notlar",
+      "Bonus track'ler"
+    ]
+  },
+  {
+    "id": "vinyl-selda-turkuler",
+    "name": "Selda Bağcan – Türkülerimiz 1 (1976)",
+    "price": 870,
+    "category": "anatolian",
+    "image": "/pictures/anadolurock/35-selda-bagcan-turkulermiz-1.jpg",
+    "rating": 4.9,
+    "badges": ["Folk", "Koleksiyon"],
+    "stock": 16,
+    "description": "Selda Bağcan'ın halk türkülerini modern yorumlarla sunduğu ilk albüm. Bağlama ve vokal performansı.",
+    "highlights": [
+      "Orijinal kapak",
+      "Türkü notaları insert",
+      "Remastered ses kalitesi"
+    ]
+  },
+  {
+    "id": "vinyl-rolling-stones-bleed",
+    "name": "The Rolling Stones – Let It Bleed (1969)",
+    "price": 1420,
+    "category": "rock",
+    "image": "/pictures/originals/36-the-rolling-stones-let-it-bleed.jpg",
+    "rating": 4.9,
+    "badges": ["Classic Rock", "Gatefold"],
+    "stock": 8,
+    "description": "Rolling Stones'un 60'ların sonundaki başyapıtı. Gimme Shelter ve You Can't Always Get What You Want gibi ikonik parçalar.",
+    "highlights": [
+      "180gr heavyweight vinil",
+      "Gatefold kapak",
+      "Orijinal ABKCO mastering"
+    ]
+  },
+  {
+    "id": "vinyl-hendrix-ladyland",
+    "name": "Jimi Hendrix – Electric Ladyland (1968)",
+    "price": 1480,
+    "category": "rock",
+    "image": "/pictures/originals/37-jimi-hendrix-electric-ladyland.jpg",
+    "rating": 5,
+    "badges": ["Psychedelic", "Double LP"],
+    "stock": 6,
+    "description": "Jimi Hendrix'in çift plaklık başyapıtı. Voodoo Child ve All Along the Watchtower gibi efsane parçalar.",
+    "highlights": [
+      "2xLP 180gr set",
+      "Orijinal Experience mastering",
+      "Gatefold kapak + poster"
+    ]
+  },
+  {
+    "id": "vinyl-dylan-freewheeling",
+    "name": "Bob Dylan – The Freewheelin' Bob Dylan (1963)",
+    "price": 1350,
+    "category": "rock",
+    "image": "/pictures/originals/38-bob-dylan-freewheeling-61-revisited.jpg",
+    "rating": 4.8,
+    "badges": ["Folk Rock", "Mono"],
+    "stock": 11,
+    "description": "Bob Dylan'ın ikinci albümü. Blowin' in the Wind ve A Hard Rain's A-Gonna Fall gibi protest şarkılar.",
+    "highlights": [
+      "Mono mix (orijinal)",
+      "Tip-on jacket",
+      "Liner notes + fotoğraflar"
+    ]
+  },
+  {
+    "id": "vinyl-floyd-wish",
+    "name": "Pink Floyd – Wish You Were Here (1975)",
+    "price": 1520,
+    "category": "rock",
+    "image": "/pictures/originals/39-pink-floyd-wish-you-were-here.jpg",
+    "rating": 5,
+    "badges": ["Progressive", "Gatefold"],
+    "stock": 7,
+    "description": "Pink Floyd'un Syd Barrett'a adadığı albüm. Shine On You Crazy Diamond ve Wish You Were Here parçaları.",
+    "highlights": [
+      "180gr audiophile pressing",
+      "Gatefold kapak",
+      "Orijinal shrink wrap efekti"
+    ]
+  },
+  {
+    "id": "vinyl-zeppelin-graffiti",
+    "name": "Led Zeppelin – Physical Graffiti (1975)",
+    "price": 1580,
+    "category": "rock",
+    "image": "/pictures/originals/40-led-zeppelin-physical-graffiti.jpg",
+    "rating": 4.9,
+    "badges": ["Double LP", "Classic Rock"],
+    "stock": 5,
+    "description": "Led Zeppelin'in çift plaklık konsept albümü. Kashmir ve Trampled Under Foot gibi efsane parçalar.",
+    "highlights": [
+      "2xLP 180gr set",
+      "Orijinal Swan Song etiket",
+      "Gatefold + insert'ler"
+    ]
   }
 ]
 
