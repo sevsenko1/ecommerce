@@ -47,6 +47,16 @@ export const ProductCard = ({ product }: ProductCardProps) => {
               {badge}
             </span>
           ))}
+          {(product.stock ?? 0) <= 0 && (
+            <span className="rounded-full bg-red-500/90 px-3 py-1 text-xs font-medium text-white backdrop-blur">
+              Tükendi
+            </span>
+          )}
+          {(product.stock ?? 0) > 0 && (product.stock ?? 0) <= 5 && (
+            <span className="rounded-full bg-amber-500/90 px-3 py-1 text-xs font-medium text-white backdrop-blur">
+              Son {product.stock} adet
+            </span>
+          )}
         </div>
       </div>
       <div className="flex flex-1 flex-col gap-4 p-5">

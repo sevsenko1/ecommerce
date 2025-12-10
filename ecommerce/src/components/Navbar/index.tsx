@@ -36,23 +36,25 @@ export const Navbar = () => {
         </div>
         <nav className="flex flex-wrap gap-2">
           {loading && (
-            <span className="text-sm text-slate-400">Kategoriler yükleniyor…</span>
+            <>
+              {[...Array(4)].map((_, i) => (
+                <div
+                  key={i}
+                  className="h-9 w-24 animate-pulse rounded-full bg-slate-200"
+                ></div>
+              ))}
+            </>
           )}
-          {data?.map((category) => (
+          {!loading && data?.map((category) => (
             <Link
               key={category.id}
               href={`/category/${category.id}`}
-              className="rounded-full border border-slate-200 px-4 py-2 text-sm text-slate-600 transition hover:border-slate-900 hover:bg-slate-900 hover:text-white"
+              className="group relative overflow-hidden rounded-full border border-slate-200 px-4 py-2 text-sm text-slate-600 transition-all duration-300 hover:border-slate-900 hover:bg-slate-900 hover:text-white hover:shadow-md hover:scale-105"
             >
-              {category.name}
+              <span className="relative z-10">{category.name}</span>
+              <span className="absolute inset-0 rounded-full bg-gradient-to-r from-slate-800 to-slate-900 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
             </Link>
           ))}
-          <Link
-            href="/checkout"
-            className="rounded-full bg-gradient-to-r from-rose-500 to-orange-400 px-4 py-2 text-sm font-medium text-white shadow-sm shadow-rose-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-rose-300/50 hover:scale-105"
-          >
-            Analog Kasaya Git
-          </Link>
         </nav>
       </div>
     </header>

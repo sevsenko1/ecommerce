@@ -3,6 +3,7 @@
 import {
   createContext,
   useContext,
+  useEffect,
   useMemo,
   useState,
   type ReactNode,
@@ -28,8 +29,37 @@ interface CartContextValue {
 
 const CartContext = createContext<CartContextValue | undefined>(undefined);
 
+const CART_STORAGE_KEY = "plaklab-cart";
+
 export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [items, setItems] = useState<CartItem[]>([]);
+  const [isInitialized, setIsInitialized] = useState(false);
+
+  // localStorage'dan sepeti yükle
+  useEffect(() => {
+    try {
+      const savedCart = localStorage.getItem(CART_STORAGE_KEY);
+      if (savedCart) {
+        const parsedCart = JSON.parse(savedCart);
+        setItems(parsedCart);
+      }
+    } catch (error) {
+      console.error("Sepet yüklenirken hata:", error);
+    } finally {
+      setIsInitialized(true);
+    }
+  }, []);
+
+  // Sepet değiştiğinde localStorage'a kaydet
+  useEffect(() => {
+    if (isInitialized) {
+      try {
+        localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(items));
+      } catch (error) {
+        console.error("Sepet kaydedilirken hata:", error);
+      }
+    }
+  }, [items, isInitialized]);
 
   const addToCart = (item: Omit<CartItem, "quantity">, quantity = 1) => {
     setItems((prev) => {

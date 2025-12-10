@@ -6,12 +6,15 @@ import { ComingSoon } from "@/components/ComingSoon";
 import { ProductSearch } from "@/components/ProductSearch";
 import { ProductCard, type Product } from "@/components/ProductCard";
 import { NoResultsModal } from "@/components/NoResultsModal";
+import { ProductCardSkeleton } from "@/components/Skeleton/ProductCardSkeleton";
 import type { Category } from "@/components/CategoryCard";
 
 interface ProductsPageProps {
   products: Product[];
   categories: Category[];
 }
+
+type SortOption = "default" | "price-asc" | "price-desc" | "rating-desc" | "name-asc" | "name-desc";
 
 export const ProductsPage = ({ products, categories }: ProductsPageProps) => {
   const [filters, setFilters] = useState<FilterState>({
@@ -22,11 +25,12 @@ export const ProductsPage = ({ products, categories }: ProductsPageProps) => {
     minRating: 0,
     inStock: null,
   });
+  const [sortBy, setSortBy] = useState<SortOption>("default");
   const [showNoResultsModal, setShowNoResultsModal] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredProducts = useMemo(() => {
-    return products.filter((product) => {
+    let filtered = products.filter((product) => {
       // Arama filtresi
       if (filters.search) {
         const searchLower = filters.search.toLowerCase();
@@ -59,7 +63,32 @@ export const ProductsPage = ({ products, categories }: ProductsPageProps) => {
 
       return true;
     });
-  }, [products, filters]);
+
+    // Sıralama
+    const sorted = [...filtered];
+    switch (sortBy) {
+      case "price-asc":
+        sorted.sort((a, b) => a.price - b.price);
+        break;
+      case "price-desc":
+        sorted.sort((a, b) => b.price - a.price);
+        break;
+      case "rating-desc":
+        sorted.sort((a, b) => b.rating - a.rating);
+        break;
+      case "name-asc":
+        sorted.sort((a, b) => a.name.localeCompare(b.name, "tr"));
+        break;
+      case "name-desc":
+        sorted.sort((a, b) => b.name.localeCompare(a.name, "tr"));
+        break;
+      default:
+        // Varsayılan sıralama (değişiklik yok)
+        break;
+    }
+
+    return sorted;
+  }, [products, filters, sortBy]);
 
   const handleNoResults = (term: string) => {
     setSearchTerm(term);
@@ -96,6 +125,23 @@ export const ProductsPage = ({ products, categories }: ProductsPageProps) => {
                   setFilters((prev) => ({ ...prev, search: term }))
                 }
               />
+            </div>
+            <div className="flex items-center justify-between">
+              <span className="text-sm text-slate-500">
+                {filteredProducts.length} ürün bulundu
+              </span>
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value as SortOption)}
+                className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20"
+              >
+                <option value="default">Varsayılan Sıralama</option>
+                <option value="price-asc">Fiyat: Düşükten Yükseğe</option>
+                <option value="price-desc">Fiyat: Yüksekten Düşüğe</option>
+                <option value="rating-desc">En Yüksek Puan</option>
+                <option value="name-asc">İsim: A-Z</option>
+                <option value="name-desc">İsim: Z-A</option>
+              </select>
             </div>
             {filteredProducts.length === 0 ? (
               <div id="no-results" className="rounded-3xl bg-white p-12 text-center shadow-sm">
