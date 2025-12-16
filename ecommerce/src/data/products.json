@@ -350,6 +350,278 @@
       "Orijinal Swan Song etiket",
       "Gatefold + insert'ler"
     ]
+  },
+  {
+    "id": "vinyl-beatles-abbey",
+    "name": "The Beatles – Abbey Road (1969)",
+    "price": 1650,
+    "category": "rock",
+    "image": "/pictures/analogrock/the-beatles-abbey-road.jpg",
+    "rating": 5,
+    "badges": ["Classic Rock", "Iconic"],
+    "stock": 9,
+    "description": "The Beatles'ın son stüdyo albümü. Come Together ve Here Comes the Sun gibi efsane parçalar.",
+    "highlights": [
+      "180gr audiophile pressing",
+      "Orijinal kapak tasarımı",
+      "Remastered stereo mix"
+    ]
+  },
+  {
+    "id": "vinyl-queen-opera",
+    "name": "Queen – A Night at the Opera (1975)",
+    "price": 1490,
+    "category": "rock",
+    "image": "/pictures/analogrock/queen-a-night-at-the-opera.jpg",
+    "rating": 4.9,
+    "badges": ["Progressive", "Gatefold"],
+    "stock": 11,
+    "description": "Bohemian Rhapsody'nin yer aldığı Queen'in başyapıtı. Gatefold kapak ve detaylı liner notlar.",
+    "highlights": [
+      "Gatefold kapak",
+      "Orijinal EMI mastering",
+      "Lyric sheet + poster"
+    ]
+  },
+  {
+    "id": "vinyl-floyd-bestof",
+    "name": "Pink Floyd – The Best of Pink Floyd",
+    "price": 1390,
+    "category": "rock",
+    "image": "/pictures/analogrock/pink-floyd-the-best-of-pink-floyd.jpg",
+    "rating": 4.7,
+    "badges": ["Compilation", "Gatefold"],
+    "stock": 14,
+    "description": "Pink Floyd'un en iyi parçalarını bir araya getiren derleme albüm. 2xLP set.",
+    "highlights": [
+      "2xLP 180gr set",
+      "Gatefold kapak",
+      "Kronolojik sıralama"
+    ]
+  },
+  {
+    "id": "vinyl-nin-things",
+    "name": "Nine Inch Nails – Things Falling Apart (2000)",
+    "price": 1120,
+    "category": "rock",
+    "image": "/pictures/analogrock/nine-inch-tails-things-falling-apart.jpg",
+    "rating": 4.6,
+    "badges": ["Industrial", "Remix"],
+    "stock": 13,
+    "description": "Nine Inch Nails'in remix albümü. Industrial rock ve elektronik elementlerin karışımı.",
+    "highlights": [
+      "180gr vinil",
+      "Remix koleksiyonu",
+      "Orijinal kapak"
+    ]
+  },
+  {
+    "id": "vinyl-clinic-monkey",
+    "name": "Clinic – Monkey on Your Back (2002)",
+    "price": 980,
+    "category": "rock",
+    "image": "/pictures/analogrock/clinic-monkey-on-your-back.jpg",
+    "rating": 4.5,
+    "badges": ["Indie Rock"],
+    "stock": 16,
+    "description": "Clinic'in garage rock ve psychedelic elementlerini harmanlayan albümü.",
+    "highlights": [
+      "180gr vinil",
+      "Orijinal kapak",
+      "Remastered ses"
+    ]
+  },
+  {
+    "id": "vinyl-fix-flash",
+    "name": "Fix – Flash (1978)",
+    "price": 1050,
+    "category": "rock",
+    "image": "/pictures/analogrock/fix-flash.jpg",
+    "rating": 4.4,
+    "badges": ["Turkish Rock"],
+    "stock": 19,
+    "description": "Türk rock müziğinin öncü gruplarından Fix'in efsane albümü.",
+    "highlights": [
+      "Orijinal kapak",
+      "Remastered stereo",
+      "Grup fotoğrafları"
+    ]
+  },
+  {
+    "id": "vinyl-hocus-pocus",
+    "name": "Hocus Pocus – Place 54 (2004)",
+    "price": 920,
+    "category": "rock",
+    "image": "/pictures/analogrock/hocus-pocus-place-54.jpg",
+    "rating": 4.3,
+    "badges": ["Alternative"],
+    "stock": 21,
+    "description": "Hocus Pocus'un alternatif rock albümü. Modern rock elementleri.",
+    "highlights": [
+      "180gr vinil",
+      "Orijinal kapak",
+      "Lyric insert"
+    ]
+  },
+  {
+    "id": "vinyl-selda-vurulduk",
+    "name": "Selda – Vurulduk Ey Halkım (1976)",
+    "price": 860,
+    "category": "anatolian",
+    "image": "/pictures/anadolurock/04-selda-vurulduk-ey-halkim.jpg",
+    "rating": 4.8,
+    "badges": ["Anadolu Rock", "Folk"],
+    "stock": 17,
+    "description": "Selda'nın protest şarkılarını içeren albüm. Bağlama ve vokal performansı.",
+    "highlights": [
+      "Orijinal kapak",
+      "Lyric sheet",
+      "Remastered ses"
+    ]
+  },
+  {
+    "id": "vinyl-cem-karaca",
+    "name": "Cem Karaca – Yoksulluk Kader Olamaz (1977)",
+    "price": 940,
+    "category": "anatolian",
+    "image": "/pictures/anadolurock/05-cem-karaca-yoksulluk-kader-olamaz.jpg",
+    "rating": 4.9,
+    "badges": ["Anadolu Rock", "Protest"],
+    "stock": 12,
+    "description": "Cem Karaca'nın sosyal mesajlı albümü. Anadolu rock ve protest müzik.",
+    "highlights": [
+      "Gatefold kapak",
+      "Orijinal liner notlar",
+      "Grup fotoğrafları"
+    ]
+  },
+  {
+    "id": "vinyl-dylan-blackout",
+    "name": "Dylan – Blackout (Remix) (2020)",
+    "price": 1080,
+    "category": "jazz",
+    "image": "/pictures/bluenotejazz/dylan-blackout(remix).jpg",
+    "rating": 4.5,
+    "badges": ["Remix", "Electronic Jazz"],
+    "stock": 15,
+    "description": "Modern elektronik ve caz elementlerini birleştiren remix albüm.",
+    "highlights": [
+      "180gr vinil",
+      "Remix koleksiyonu",
+      "Orijinal kapak"
+    ]
+  },
+  {
+    "id": "vinyl-easymo-cut",
+    "name": "Easymo – Cut and Run E.P. (2019)",
+    "price": 890,
+    "category": "jazz",
+    "image": "/pictures/bluenotejazz/easymo-cut-and-run-e.p.jpg",
+    "rating": 4.4,
+    "badges": ["EP", "Modern Jazz"],
+    "stock": 18,
+    "description": "Easymo'nun modern caz EP'si. Kısa ama etkili parçalar.",
+    "highlights": [
+      "12\" EP",
+      "Orijinal kapak",
+      "Limited edition"
+    ]
+  },
+  {
+    "id": "vinyl-inner-circle",
+    "name": "Inner Circle – Reggae Dancer (1993)",
+    "price": 1020,
+    "category": "jazz",
+    "image": "/pictures/bluenotejazz/inner-circle-reggae-dancer.jpg",
+    "rating": 4.6,
+    "badges": ["Reggae", "Dance"],
+    "stock": 14,
+    "description": "Inner Circle'un reggae ve dans müziği karışımı albümü.",
+    "highlights": [
+      "180gr vinil",
+      "Orijinal kapak",
+      "Remastered ses"
+    ]
+  },
+  {
+    "id": "vinyl-repeat-lilt",
+    "name": "Repeat – Lilt A (2018)",
+    "price": 950,
+    "category": "jazz",
+    "image": "/pictures/bluenotejazz/repeat-lilt-A.jpg",
+    "rating": 4.3,
+    "badges": ["Modern Jazz"],
+    "stock": 16,
+    "description": "Repeat'in modern caz albümü. Deneysel yaklaşımlar.",
+    "highlights": [
+      "180gr vinil",
+      "Orijinal kapak",
+      "Limited pressing"
+    ]
+  },
+  {
+    "id": "vinyl-sonnenbrandt",
+    "name": "Sonnenbrandt – Gesten (2021)",
+    "price": 1100,
+    "category": "jazz",
+    "image": "/pictures/bluenotejazz/sonnenbrandt-gesten.jpg",
+    "rating": 4.5,
+    "badges": ["Contemporary Jazz"],
+    "stock": 13,
+    "description": "Sonnenbrandt'un çağdaş caz albümü. Modern yorumlar.",
+    "highlights": [
+      "180gr vinil",
+      "Gatefold kapak",
+      "Orijinal mastering"
+    ]
+  },
+  {
+    "id": "vinyl-srange-2001",
+    "name": "Srange – 2001 (2001)",
+    "price": 1030,
+    "category": "jazz",
+    "image": "/pictures/bluenotejazz/srange-2001.jpg",
+    "rating": 4.4,
+    "badges": ["Electronic Jazz"],
+    "stock": 17,
+    "description": "Srange'in elektronik caz albümü. Yıl 2001'in atmosferini yansıtıyor.",
+    "highlights": [
+      "180gr vinil",
+      "Orijinal kapak",
+      "Remastered ses"
+    ]
+  },
+  {
+    "id": "vinyl-nick-cave",
+    "name": "Nick Cave & The Bad Seeds – Abattoir Blues (2004)",
+    "price": 1280,
+    "category": "rock",
+    "image": "/pictures/originals/nickcave-and-thebadseeds-abottoirblues.jpg",
+    "rating": 4.8,
+    "badges": ["Alternative", "Double LP"],
+    "stock": 10,
+    "description": "Nick Cave & The Bad Seeds'in çift plaklık albümü. Karanlık ve güçlü atmosfer.",
+    "highlights": [
+      "2xLP 180gr set",
+      "Gatefold kapak",
+      "Orijinal mastering"
+    ]
+  },
+  {
+    "id": "vinyl-oliver-koletzki",
+    "name": "Oliver Koletzki – Schneeweiß 8 (2015)",
+    "price": 1150,
+    "category": "soundtrack",
+    "image": "/pictures/originals/oliverkoletzksi-Schneeweiß 8.jpg",
+    "rating": 4.6,
+    "badges": ["Electronic", "Dance"],
+    "stock": 12,
+    "description": "Oliver Koletzki'nin elektronik dans müziği albümü. Modern prodüksiyon.",
+    "highlights": [
+      "180gr vinil",
+      "Orijinal kapak",
+      "Remastered ses"
+    ]
   }
 ]
 
